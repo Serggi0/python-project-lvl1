@@ -1,26 +1,24 @@
-name: Super-Linter
+# имя, чтобы отображалось в интерфейсе
+name: 'make lint'
 
-# Run this workflow every time a new commit pushed to your repository
-on: push
+# тут список событий, на который экшен должен запускаться
+on: # пусть гоняется на любой пуш
+  push:
+    branches:
+      - main
 
+# список того, что нужно делать. каждый job будет выводиться отдельным элементом слева UI
 jobs:
-  # Set the job key. The key is displayed as the job name
-  # when a job name is not provided
-  super-lint:
-    # Name the Job
-    name: Lint code base
-    # Set the type of machine to run on
-    runs-on: ubuntu-latest
-
-
-    steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
+  # Ключ задания. Клавиша отображается в виде имени задания  
+  lint-flake8: 
+    runs-on: ubuntu-latest # на какой машине гонять
+    steps: # список шагов
+      #Проверяет копию вашего репозитория на последней машине ubuntu
       - name: Checkout code
         uses: actions/checkout@v2
-
-      # Runs the Super-Linter action
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
+      
+      - name: 'test flake8 from Makefile'
+        run: cd / make install | make lint
         env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         DEFAULT_BRANCH: main
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
