@@ -16,9 +16,20 @@ jobs:
       #Проверяет копию вашего репозитория на последней машине ubuntu
       - name: Checkout code
         uses: actions/checkout@v2
+        uses: actions/setup-python@v1
+          with:
+            python-version: '3.8'
+
+      - name: 'Install pip'
+        run: |
+          python -m pip install --upgrade pip
+      
+      - name: 'Install poetry'
+        run: |
+          pip install poetry        
       
       - name: 'test flake8 from Makefile'
-        run: cd / make install | make lint
+        run: cd / make lint
         env:
          DEFAULT_BRANCH: main
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
