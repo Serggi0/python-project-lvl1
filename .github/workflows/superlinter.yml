@@ -23,7 +23,8 @@ jobs:
       
       - name: 'Install poetry'
         run: |
-          pip install poetry        
+          pip install poetry
+          pip install flake8        
       
       - name: 'test flake8 from Makefile'
         run: cd / | make lint
