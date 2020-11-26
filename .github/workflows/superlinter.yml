@@ -12,19 +12,20 @@ jobs:
   # Ключ задания. Клавиша отображается в виде имени задания  
   lint-flake8: 
     runs-on: ubuntu-latest # на какой машине гонять
+    # Взято из шаблона GitHub Python package
     strategy:
       matrix:
-        python-version: [3.8, 3.9]
+        python-version: [3.8]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
             python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
+      - name: Install poetry
         run: |
           pip install poetry
           make install
-      - name: Run linter
+      - name: Test flake8 from Makefile
         run: |
           make lint
