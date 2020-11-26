@@ -26,7 +26,7 @@ jobs:
           pip install poetry        
       
       - name: 'test flake8 from Makefile'
-        run: cd / make lint
+        run: cd / | make lint
         env:
          DEFAULT_BRANCH: main
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
