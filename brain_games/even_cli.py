@@ -38,7 +38,7 @@ def check_even():
                     break
                 else:
                     print("'", answer, "'", " is wrong answer ;(.\
- Correct answer was 'yes'.", sep='')
+ Correct answer was 'no'.", sep='')
                     break
     if i == 3:
         print('Congratulations, ', name, '!', sep='')
