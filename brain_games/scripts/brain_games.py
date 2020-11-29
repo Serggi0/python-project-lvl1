@@ -2,7 +2,7 @@
 import brain_games.cli
 
 
-def main():   
+def main():
     brain_games.cli.welcome_user()
 
 
