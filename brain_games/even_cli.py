@@ -26,6 +26,7 @@ def check_even():
                 else:
                     print("'", answer, "'", " is wrong answer ;(.\
  Correct answer was 'yes'.", sep='')
+                    print("Let's try again, ", name)
                     break
             else:
                 if answer == 'no':
@@ -39,6 +40,7 @@ def check_even():
                 else:
                     print("'", answer, "'", " is wrong answer ;(.\
  Correct answer was 'no'.", sep='')
+                    print("Let's try again, ", name)
                     break
     if i == 3:
         print('Congratulations, ', name, '!', sep='')
