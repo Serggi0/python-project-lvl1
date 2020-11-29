@@ -6,3 +6,6 @@
 
 ### GitHub action badge:
 [![make lint GitHub action](https://github.com/Serggi0/python-project-lvl1/workflows/make%20lint%20GitHub%20action/badge.svg)](https://github.com/Serggi0/python-project-lvl1/actions)
+
+### Asciinema, step 5:
+[![asciicast](https://asciinema.org/a/376045.svg)](https://asciinema.org/a/376045)
