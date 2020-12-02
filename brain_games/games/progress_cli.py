@@ -25,7 +25,7 @@ def result_play():
     random_index = randint(1, 9)
     check_play = list_prgr[random_index]
     list_prgr[random_index] = '..'
-    print('Question: ', list_prgr)
+    print('Question:', ' '.join([str(i) for i in list_prgr]))
     return check_play
 
 
