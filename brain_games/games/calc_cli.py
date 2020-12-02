@@ -8,8 +8,10 @@ def hello():
     name = prompt.string('May I have your name? ')
     print('Hello, ', name, '!', sep='')
 
+
 def invite_game():
     print('What is the result of the expression?')
+
 
 def result_play():
     from random import randint, choice
@@ -65,5 +67,3 @@ def round_game_3():
  Correct answer was ", "'", check_play, "'", sep='')
         print("Let's try again, ", name)
         return False
-
-
