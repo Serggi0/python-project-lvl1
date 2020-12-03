@@ -21,3 +21,6 @@
 
 ### Asciinema, project1 step 8:
 [![asciicast](https://asciinema.org/a/376819.svg)](https://asciinema.org/a/376819)
+
+### Asciinema, project1 step 9:
+[![asciicast](https://asciinema.org/a/376959.svg)](https://asciinema.org/a/376959)
