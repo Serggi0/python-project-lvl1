@@ -13,4 +13,7 @@ build:
 package-install:
 	pip install --user dist/*.whl
 
-.PHONY: install build package-install brain-games
+lint:
+	poetry run flake8 brain_games
+
+.PHONY: install build package-install lint brain-games
