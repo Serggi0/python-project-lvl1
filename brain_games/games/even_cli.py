@@ -11,6 +11,6 @@ def calculate(number):
 
 
 def round():
-    random_number = randint(0, 101)
-    correct_answer = calculate(random_number)
-    return random_number, correct_answer
+    round_question = randint(0, 101)
+    correct_answer = calculate(round_question)
+    return round_question, correct_answer
