@@ -4,6 +4,9 @@ install:
 brain-games:
 	poetry run brain-games
 
+brain-even:
+	poetry run brain-even
+
 publish:
 	poetry publish --dry-run
 
@@ -16,4 +19,4 @@ package-install:
 lint:
 	poetry run flake8 brain_games
 
-.PHONY: install build package-install lint brain-games
+.PHONY: install build package-install lint brain-games brain-even
