@@ -16,7 +16,7 @@ def run_game(cli):
     hello(cli)
     while count_correct_answer < count_rounds:
         round_question, correct_answer = cli.round()
-        print('Question: ', round_question)
+        print('Question:', round_question)
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:
             count_correct_answer += 1
