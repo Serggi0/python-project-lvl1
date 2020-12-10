@@ -7,6 +7,8 @@
 #### GitHub action badge:
 [![lint GitHub action](https://github.com/Serggi0/python-project-lvl1/workflows/lint%20GitHub%20action/badge.svg)](https://github.com/Serggi0/python-project-lvl1/actions)
 
+<!-- [! [Статус действий YourActionName] (https://github.com/ { userName } / { repoName } / workflows / { workflowName } /badge.svg)] (https://github.com/ { userName } / { repoName } / action) -->
+
 #### Asciinema, project1 step 5:
 [![asciicast](https://asciinema.org/a/bQJjRwy5Bn8VgJZHnmiUPFBZP.svg)](https://asciinema.org/a/bQJjRwy5Bn8VgJZHnmiUPFBZP)
 
