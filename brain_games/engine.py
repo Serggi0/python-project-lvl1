@@ -22,4 +22,4 @@ def run(game):
             print("Let's try again, {}!".format(name))
             break
     if count_correct_answer == count_rounds:
-        print("Congratulations, {}".format(name))
+        print("Congratulations, {}!".format(name))
