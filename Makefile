@@ -31,4 +31,5 @@ package-install:
 lint:
 	poetry run flake8 brain_games
 
+
 .PHONY: install build package-install lint brain-games brain-even brain-calc brain-gcd brain-prog brain-prime
