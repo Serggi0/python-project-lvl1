@@ -1,6 +1,6 @@
 from random import randint, choice
 
-condition = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 
 
 def calculate(start, step, index, count_member):
