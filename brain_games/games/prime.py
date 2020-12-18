@@ -12,7 +12,7 @@ def calculate(number):
         for i in range(2, number):
             if number % i == 0:
                 return 'no'
-            return 'yes'
+        return 'yes'
 
 
 def round():
