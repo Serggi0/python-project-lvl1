@@ -3,7 +3,7 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def calculate(number):
+def is_prime(number):
     if number < 2:
         return 'no'
     elif number == 2:
@@ -17,5 +17,5 @@ def calculate(number):
 
 def round():
     round_question = randint(0, 101)
-    correct_answer = calculate(round_question)
+    correct_answer = is_prime(round_question)
     return round_question, correct_answer

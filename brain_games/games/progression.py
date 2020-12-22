@@ -3,7 +3,7 @@ from random import randint, choice
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def calculate(start, step, index, count_member):
+def generate_progression(start, step, index, count_member):
     finish = start + count_member * step
     list_progression = [i for i in range(start, finish, step)]
     check_play = list_progression[index]
@@ -20,6 +20,6 @@ def round():
     step_prgr = choice(list_step_prgr)
     random_index = randint(1, 9)
 
-    correct_answer, round_question = calculate(
+    correct_answer, round_question = generate_progression(
         start_prgr, step_prgr, random_index, 10)
     return round_question, str(correct_answer)
