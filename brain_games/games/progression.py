@@ -3,23 +3,23 @@ from random import randint, choice
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def generate_progression(start, step, index, count_member):
+def hide_number(start, step, index, count_member):
     finish = start + count_member * step
-    list_progression = [i for i in range(start, finish, step)]
-    check_play = list_progression[index]
-    list_progression[index] = '..'
-    elements = ' '.join([str(i) for i in list_progression])
+    progressions = [i for i in range(start, finish, step)]
+    check_play = progressions[index]
+    progressions[index] = '..'
+    elements = ' '.join([str(i) for i in progressions])
     return check_play, elements
 
 
-def round():
-    # count_member_prgr = 10
-    start_prgr = randint(1, 99)
-    list_step_prgr = [i for i in range(-10, 11, 1)]
-    list_step_prgr.remove(0)
-    step_prgr = choice(list_step_prgr)
-    random_index = randint(1, 9)
-
-    correct_answer, round_question = generate_progression(
-        start_prgr, step_prgr, random_index, 10)
+def play_round():
+    number_of_progression = 10
+    index_hidden_number = randint(1, 9)
+    start_progression = randint(1, 99)
+    progression_steps = [i for i in range(-10, 11, 1)]
+    progression_steps.remove(0)
+    step_progression = choice(progression_steps)
+    correct_answer, round_question = hide_number(
+            start_progression, step_progression,
+            index_hidden_number, number_of_progression)
     return round_question, str(correct_answer)

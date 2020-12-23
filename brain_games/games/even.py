@@ -5,12 +5,13 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def is_even(number):
     if number % 2 == 0:
-        return 'yes'
-    else:
-        return 'no'
+        return True
 
 
-def round():
+def play_round():
     round_question = randint(0, 101)
-    correct_answer = is_even(round_question)
+    if is_even(round_question) is True:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return round_question, correct_answer
