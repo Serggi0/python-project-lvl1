@@ -19,7 +19,7 @@ def play_round():
     random_number2 = randint(1, 10)
     random_operator = choice(operators)
     round_question = "{} {} {}".format(
-                    random_number1, random_operator, random_number2)
+        random_number1, random_operator, random_number2)
     correct_answer = str(
-                    calculate(random_number1, random_operator, random_number2))
+        calculate(random_number1, random_operator, random_number2))
     return round_question, correct_answer

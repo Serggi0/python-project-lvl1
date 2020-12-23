@@ -20,6 +20,6 @@ def play_round():
     progression_steps.remove(0)
     step_progression = choice(progression_steps)
     correct_answer, round_question = hide_number(
-            start_progression, step_progression,
-            index_hidden_number, number_of_progression)
+        start_progression, step_progression,
+        index_hidden_number, number_of_progression)
     return round_question, str(correct_answer)
