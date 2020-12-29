@@ -5,6 +5,9 @@
 [![lint GitHub action](https://github.com/Serggi0/python-project-lvl1/workflows/lint%20GitHub%20action/badge.svg)](https://github.com/Serggi0/python-project-lvl1/actions)   *GitHub action badge*
 
 <!-- [! [Статус действий YourActionName] (https://github.com/ { userName } / { repoName } / workflows / { workflowName } /badge.svg)] (https://github.com/ { userName } / { repoName } / action) -->
+
+### Brain games
+
 This is my first training project on [Hexlet.io](https://ru.hexlet.io) course.
 
 "Brain games" — a set of five console games built on the principle of popular mobile applications for brain pumping. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and offer to go through it again. Games:
@@ -14,6 +17,8 @@ This is my first training project on [Hexlet.io](https://ru.hexlet.io) course.
 -   Definition of an even number.
 -   Determination of the greatest common divisor.
 -   Definition of a Prime number.
+
+
 
 Examples of games:
 
