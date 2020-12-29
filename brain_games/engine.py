@@ -10,7 +10,7 @@ def run(game):
     print(game.DESCRIPTION)
     count_correct_answer = 0
     while count_correct_answer < number_of_rounds:
-        round_question, correct_answer = game.play_round()
+        round_question, correct_answer = game.give_data_for_round()
         print("Question: {}".format(round_question))
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:

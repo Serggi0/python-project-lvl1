@@ -5,17 +5,20 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def check_if_prime(number):
     if number < 2:
-        return 'no'
+        return False
     elif number == 2:
-        return 'yes'
+        return True
     else:
         for i in range(2, number):
             if number % i == 0:
-                return 'no'
-        return 'yes'
+                return False
+        return True
 
 
-def play_round():
+def give_data_for_round():
     round_question = randint(0, 101)
-    correct_answer = check_if_prime(round_question)
+    if check_if_prime(round_question) is True:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return round_question, correct_answer
